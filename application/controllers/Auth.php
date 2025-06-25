@@ -53,7 +53,8 @@ class Auth extends CI_Controller {
         }
 
         $this->load->view('auth/register',['page_title' => 'Register']);
-        }
+
+    }
 
     public function register_submit()
     {
