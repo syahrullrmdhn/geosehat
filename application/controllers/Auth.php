@@ -13,7 +13,7 @@ class Auth extends CI_Controller {
         if ($this->session->userdata('user')) {
             redirect('dashboard');
         }
-        $this->load->view('auth/login' , ['page_title' => 'Login']);;
+        $this->load->view('auth/login', ['page_title' => 'Login']);
     }
 
     public function login_submit()
