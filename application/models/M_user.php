@@ -10,8 +10,15 @@ class M_user extends CI_Model {
     public function insert(array $d) {
         return $this->db->insert($this->table,$d);
     }
+
     public function update($id, array $d) {
         return $this->db->where('id', $id)->update($this->table, $d);
+      
+    public function get($id) {
+        return $this->db->where('id',$id)->get($this->table)->row();
+    }
+    public function update($id, array $d) {
+        return $this->db->where('id',$id)->update($this->table,$d);
     }
     public function delete($id) {
         return $this->db->delete($this->table,['id'=>$id]);
