@@ -30,3 +30,8 @@ $route['regions/store']    = 'Regions/store';
 // dst.
 $route['settings/notifications']      = 'settings/notifications';
 $route['settings/save_notifications'] = 'settings/save_notifications';
+$route['faskes-staff']       = 'FaskesStaff/index';
+$route['faskes-staff/store'] = 'FaskesStaff/store';
+$route['faskes-staff/edit/(:num)'] = 'FaskesStaff/edit/$1';
+$route['faskes-staff/update/(:num)'] = 'FaskesStaff/update/$1';
+$route['faskes-staff/delete/(:num)'] = 'FaskesStaff/delete/$1';
