@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config['base_url'] = 'http://localhost/_geosehat';
-$config['index_page'] = 'index.php';       // HARUS isi "index.php"
+$config['index_page'] = 'index.php';       // Keep this unless URL rewriting removes index.php
 $config['uri_protocol'] = 'REQUEST_URI';
 $config['url_suffix'] = '';
 $config['language']	= 'english';
